@@ -12,16 +12,14 @@ ext {
             minSdkVersion    : 14,
             targetSdkVersion : 27,
 
-            versionCode      : 5,
-            versionName      : "1.0.5",
+            versionCode      : 6,
+            versionName      : "1.0.6"
     ]
 
 
     dependencies = [
             design      : 'com.android.support:design:27.1.0',
             appCompat   : 'com.android.support:appcompat-v7:27.1.0',
-            recyclerView: 'com.android.support:recyclerview-v7:27.1.0',
-
-            sofia       : 'com.yanzhenjie:sofia:1.0.5'
+            recyclerView: 'com.android.support:recyclerview-v7:27.1.0'
     ]
 }
