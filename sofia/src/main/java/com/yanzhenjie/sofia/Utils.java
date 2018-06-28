@@ -66,6 +66,14 @@ public class Utils {
         }
     }
 
+    public static void fitStatusBar(Activity activity) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            Window window = activity.getWindow();
+            window.clearFlags(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
+            window.setStatusBarColor(Color.BLACK);
+        }
+    }
+
     /**
      * Set the content layout full the NavigationBar, but do not hide NavigationBar.
      */
@@ -77,6 +85,14 @@ public class Utils {
                     | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
                     | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
             window.setNavigationBarColor(Color.TRANSPARENT);
+        }
+    }
+
+    public static void fitNavigationBar(Activity activity) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            Window window = activity.getWindow();
+            window.clearFlags(View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
+            window.setNavigationBarColor(Color.BLACK);
         }
     }
 

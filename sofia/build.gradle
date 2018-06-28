@@ -11,5 +11,3 @@ android {
 
     resourcePrefix 'sofia'
 }
-
-apply from: 'https://raw.githubusercontent.com/yanzhenjie/bintray/master/maven.gradle'

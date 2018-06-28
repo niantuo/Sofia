@@ -1,9 +1,7 @@
 ext {
     plugins = [
             library    : 'com.android.library',
-            application: 'com.android.application',
-            maven      : 'com.github.dcendents.android-maven',
-            bintray    : 'com.jfrog.bintray'
+            application: 'com.android.application'
     ]
 
     android = [
@@ -18,34 +16,6 @@ ext {
             versionName      : "1.0.5",
     ]
 
-    bintray = [
-            version       : "1.0.5",
-
-            siteUrl       : 'https://github.com/yanzhenjie/Sofia',
-            gitUrl        : 'git@github.com:yanzhenjie/Sofia.git',
-
-            group         : "com.yanzhenjie",
-
-            // project
-            packaging     : 'aar',
-            name          : 'Sofia',
-            description   : 'Sofia for android',
-
-            // project.license
-            licenseName   : 'The Apache Software License, Version 2.0',
-            licenseUrl    : 'http://www.apache.org/licenses/LICENSE-2.0.txt',
-
-            // project.developers
-            developerId   : 'yanzhenjie',
-            developerName : 'yanzhenjie',
-            developerEmail: 'smallajax@foxmail.com',
-
-            // bintray
-            binrayLibrary : "Sofia",
-            bintrayRepo   : "maven",
-            bintrayUser   : 'yolanda',
-            bintrayLicense: "Apache-2.0"
-    ]
 
     dependencies = [
             design      : 'com.android.support:design:27.1.0',
