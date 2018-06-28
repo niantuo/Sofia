@@ -1,21 +1,22 @@
-apply plugin: rootProject.ext.plugins.application
+apply plugin: 'com.android.application'
+
 
 android {
-    compileSdkVersion rootProject.ext.android.compileSdkVersion
-    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
 
     defaultConfig {
-        applicationId rootProject.ext.android.applicationId
-        minSdkVersion rootProject.ext.android.minSdkVersion
-        targetSdkVersion rootProject.ext.android.targetSdkVersion
-        versionCode rootProject.ext.android.versionCode
-        versionName rootProject.ext.android.versionName
+        applicationId "com.yanzhenjie.sofia.sample"
+        minSdkVersion 14
+        targetSdkVersion 27
+        versionCode 6
+        versionName "1.0.6"
     }
 }
 
 dependencies {
-    implementation rootProject.ext.dependencies.appCompat
-    implementation rootProject.ext.dependencies.design
-    implementation rootProject.ext.dependencies.recyclerView
+    implementation "com.android.support:design:27.1.1"
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
     implementation project(':sofia')
 }

@@ -1,13 +1,14 @@
-apply plugin: rootProject.ext.plugins.library
-
+apply plugin: 'com.android.library'
 android {
-    compileSdkVersion rootProject.ext.android.compileSdkVersion
-    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
 
     defaultConfig {
-        minSdkVersion rootProject.ext.android.minSdkVersion
-        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        minSdkVersion 14
+        targetSdkVersion 27
+        versionCode 6
+        versionName "1.0.6"
     }
 
-    resourcePrefix 'sofia'
+
 }
